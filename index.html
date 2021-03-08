@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Responsive Landing Page Website by using GSAP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+</head>
+<body>
+    <div class="animation"></div>
+    <section class="section">
+        <header>
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+            <ul class="ul">
+                <li><a href="#">About.</a></li>
+                <li><a href="#">Contact.</a></li>
+            </ul>
+        </header>
+        <div class="heroImg"></div>
+        <div class="container">
+            <h1 class="h1animate">Design Studio</h1>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, porro.</p>
+
+        </div>
+        <div class="social">
+            <a href="#" class="fb">facebook</a>
+            <a href="#" class="insta">insta</a>
+        </div>
+        <div class="theme" id="dark" onclick="toggle()">turnDark</div>
+        <div class="theme" id="light" onclick="toggle()">turnLight</div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

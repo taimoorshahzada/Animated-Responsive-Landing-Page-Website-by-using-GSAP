@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 90;
+    background-color: rgb(175, 0, 0);
+
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFAF0;
+    transition: 1s ease-in-out;
+}
+section.active{
+    transition: 1s ease-in-out;
+    background-color: #1b1b1e;
+    color: white;
+
+}
+section.active a{
+    transition:  2s ease-in-out;
+    transition-delay: 0.5s;
+    color: white;
+
+}
+section.active #dark{
+    opacity: 0;
+
+}
+section.active #light{
+    opacity: 1;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    margin-left: 50px;
+
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Monument';
+    font-weight: 700;
+    font-size: 30px;
+
+}
+header ul{
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+
+}
+header ul li{
+    margin: 0 13px;
+
+}
+header ul li a{
+    font-family: 'Monument';
+    font-size: 13px;
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+
+}
+.heroImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60vh;
+    width: 300px;
+    background: url(hero.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0.8s;
+    transition: 1s ease-in-out;
+
+}
+.heroImg:hover{
+    transition: 1s ease-in-out;
+    opacity: 1;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.container p{
+    z-index: 25;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+.container h1{
+    font-family: 'Great Vibes';
+    font-size: 100px;
+    font-weight: 900;
+
+}
+.h1animate{
+    z-index: 100;
+
+}
+.social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 50px;
+}
+.social a{
+    color: black;
+    font-family: 'Monument';
+    font-size: 10px;
+    font-weight: lighter;
+
+}
+.theme{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+
+}
+#dark{
+    cursor: pointer;
+}
+#light{
+    cursor: pointer;
+    opacity: 0;
+
+}
+section a{
+    transition: 2s ease-in-out;
+}
+@media(max-width: 706px){
+    .container p{
+        font-size: 13px;
+
+    }
+    .social{
+        width: 200px;
+
+    }
+    .social a{
+        font-size: 8px;
+
+    }
+    .container h1{
+        font-size: 80px;
+
+    }
+    header{
+        height: 80px;
+    }
+    .logo{
+        margin-left: 20px;
+
+    }
+    header ul{
+        margin-right: 20px;
+
+    }
+}
+@media (max-width: 462px){
+    .container{
+        margin-right: 20px;
+        margin-left: 40px ;
+    }
+}
